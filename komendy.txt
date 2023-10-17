@@ -1,0 +1,6 @@
+java -jar target/my-app-1.0-SNAPSHOT.jar
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+pmd check -d /home/bartek/TP_1_LABY/my-app/src/main/java/com/example -R rulesets/java/quickstart.xml -f text
+alias pmd="$HOME/pmd-bin-7.0.0-rc4/bin/pmd"
